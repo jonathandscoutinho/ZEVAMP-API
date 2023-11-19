@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.example.projetoapiuni9.model.Usuario;
 
-public interface IUsuario extends CrudRepository<Usuario, Integer>{
+public interface IUsuario extends CrudRepository<Usuario, Long>{
 	
 }

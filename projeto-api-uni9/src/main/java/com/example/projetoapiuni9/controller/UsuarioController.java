@@ -43,7 +43,7 @@ public class UsuarioController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public Optional<Usuario> excluirUsuario (@PathVariable Integer id) {
+	public Optional<Usuario> excluirUsuario (@PathVariable Long id) {
 		Optional<Usuario> usuario = dao.findById(id);
 		dao.deleteById(id);
 		return usuario;
